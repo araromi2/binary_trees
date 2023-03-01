@@ -1,5 +1,5 @@
-#ifndef BINARY_TREES.H
-#define BINARY_TREES.H
+#ifndef _BINARY_TREES.H_
+#define _BINARY_TREES.H_
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -22,11 +22,12 @@ typedef struct binary_tree_s bst_t; /* Binary Search Tree */
 typedef struct binary_tree_s avl_t; /* AVL Tree */
 typedef struct binary_tree_s heap_t; /* Max Binary Heap */
 
+void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
 
-#endif /* BINARY_TREES.H */
+#endif /* _BINARY_TREES.H_ */
 
