@@ -1,5 +1,13 @@
-#ifndef _BINARY_TREES.H_
-#define _BINARY_TREES.H_
+#ifndef _BINARY_TREES_H_
+#define _BINARY_TREES_H_
+
+#include <stdlib.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <math.h>
+#include <string.h>
+#include <limits.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -29,5 +37,5 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
 
-#endif /* _BINARY_TREES.H_ */
+#endif /* _BINARY_TREES_H_ */
 
